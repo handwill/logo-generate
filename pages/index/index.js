@@ -4,10 +4,10 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    imageTemps:['demo1', 'demo2', 'demo3', 'demo3', 'demo3', 'demo3']
   },
   //事件处理函数
   bindViewTap: function() {

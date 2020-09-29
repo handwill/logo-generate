@@ -1,21 +1,122 @@
 /**index.wxss**/
-.userinfo {
+
+.container {
+  height: 100%;
+  min-height: 100vh;
+
+  box-sizing: border-box;
+  background-color: #FFD2B0;
+}
+
+.top-bg {
+  width: 100%;
+  height: 114vw;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-image image {
+  width: 100%;
+  height: 100%;
+}
+
+.top-bg .center {
+  width: 430rpx;
+  height: 430rpx;
+  background: #FFFFFF;
+  border-radius: 40rpx;
+  margin-top: 37vw;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.top-bg .center .rabbit {
+  width: 170rpx;
+  height: 208rpx;
+  margin-top: 74rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.top-bg .center .rabbit image {
+  width: 100%;
+  height: 100%;
 }
 
-.usermotto {
-  margin-top: 200px;
+.top-bg .center .get-userinfo {
+  width: 288rpx;
+  height: 80rpx;
+  margin-top: 28rpx;
+  background: linear-gradient(116deg, #F76B1C 0%, #F35943 100%);
+  border-radius: 49rpx;
+  font-size: 36rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 80rpx;
+  padding: 0;
+}
+
+.temp-container {
+  /* width: 100%; */
+  height: 204rpx;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.temps{
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.image-temp{
+  width: 150rpx;
+height: 150rpx;
+background: #FFFFFF;
+box-shadow: 0px 6rpx 20rpx 0px rgba(100, 0, 0, 0.2);
+border-radius: 10rpx;
+margin: 20rpx 6rpx;
+display: inline-block;
+}
+
+.choose-btns{
+  margin: 60rpx 40rpx 0 40rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.choose-image{
+  width: 288rpx;
+  height: 88rpx;
+  background: #FFFFFF;
+  border-radius: 49rpx;
+  text-align: center;
+  font-size: 36rpx;
+  line-height: 88rpx;
+  color: #090909;
+}
+
+.genarate{
+  width: 288rpx;
+height: 88rpx;
+background: linear-gradient(116deg, #F76B1C 0%, #F35943 100%);
+border-radius: 49rpx;
+text-align: center;
+font-size: 36rpx;
+line-height: 88rpx;
+color: white;
 }
